@@ -6,7 +6,6 @@ import resolver from "../sm-resolver.js";
 import Layout from "../components/Layout";
 
 import Button from '../components/button';
-import dynamic from 'next/dynamic';
 import AboutMe from '../components/AboutMe';
 
 import styles from '../styles/Home.module.scss';
