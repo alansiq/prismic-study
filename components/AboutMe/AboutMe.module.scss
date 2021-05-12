@@ -1,0 +1,26 @@
+@import '../../styles/var';
+
+.AboutContainer {
+    height: 100%;
+    max-width: $xl;
+
+
+    display: flex;
+    flex-direction: column;
+
+    
+    .ContentContainer {
+        width: 100%;
+        display: flex;
+        gap: 32px;
+
+        .TextContainer {
+            flex: 1;
+        }
+
+        .Images {
+            flex: 1;
+        }
+    }
+
+}

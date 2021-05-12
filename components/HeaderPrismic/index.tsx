@@ -2,7 +2,9 @@ import React from "react";
 import { RichText } from 'prismic-reactjs'
 import { Link } from 'prismic-reactjs'
 
-const HeaderPrismic = ({ menu = [] }) => (
+
+
+const HeaderPrismic = ({ menu }: any ) => (
     <header className="site-header">
       <a href="/" className="logo">
         {RichText.asText(menu.data.title)}

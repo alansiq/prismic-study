@@ -1,0 +1,221 @@
+@import '../../styles/var';
+
+.container { 
+    z-index: 5;
+    position: absolute;
+    max-width: 1300px;
+    
+    display: flex;
+    height: 64px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    margin: 0 auto;
+
+
+
+    .logo {
+        font-size: 1.5rem;
+        position: relative;
+        color: $textcolor;
+        cursor: pointer;
+        text-transform: uppercase;
+        user-select: none;
+        transition: transform 0.05s;
+        
+
+        &:after {
+            position: absolute;
+            font-size: 0.8rem;
+            right: 0;
+            top: 100%;
+            content: 'fullstack developer';
+            color: $textcolor_darker;
+            text-transform: lowercase;
+        }
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+
+        font-size: 1.2rem;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.navlinks {
+    gap: 16px;
+}
+
+.navlink {
+    font-family: $headingfont;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 0%;
+        bottom: -8px;
+        left: 50%;
+
+        height: 2px;
+
+        transition: all 0.2s;
+    }
+
+    &:hover {
+
+        &::before {
+            width: 100%;
+            background-color: $accentcolor;
+            left: 0;
+
+        }
+    }
+}
+
+.active {
+    &::before {
+        width: 100%;
+        left: 0;
+        background-color: $accentcolor;
+    }
+}
+
+.bloglink {
+
+    &.hasNewPosts {
+        &::after {
+            content: '';
+            position: absolute;
+            background-color: $accentcolor;
+            color: $textcolor;
+            padding: 4px;
+            border-radius: 50%;
+        }
+    }
+
+    /* FOR DEVELOPMENT ONLY, REMOVE ON PRODUCTION */ 
+    &::after {
+        content: '';
+        position: absolute;
+        background-color: $accentcolor;
+        color: $textcolor;
+        padding: 4px;
+        border-radius: 50%;
+    }
+}
+
+.social {
+    gap: 8px !important;
+
+    li {
+        transition: all 0.1s;
+        &:hover {
+            transform: scale(1.1);
+            svg {
+            fill: $accentcolor !important;
+            }
+        }
+    }
+
+}
+
+
+
+
+// Mobile code
+.toggler {
+    display: none;
+}
+
+@media(max-width: $sm) {
+
+
+    .container {
+        padding: 8px;
+
+        position: fixed;
+        flex-direction: column;
+        gap: 32px;
+        align-items: stretch;
+        height: 0%;
+        transition: all 0.2s;
+
+        .navlinks {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navlinks, .social {
+            display: none;
+            opacity: 0%;
+            transition: all 0.1s;
+            transition-delay: 1s;
+        }
+
+        .toggler {
+            position: absolute;
+            right: 8px;
+    
+            height: 28px;
+            width: 28px;
+
+
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        
+            div {
+                width: 100%;
+                height: 2px;
+                border-radius: 8px;
+                background: white;
+        
+                transition: all 0.2s;
+            }
+        }
+
+        &.expanded {
+            background-color: $richblack;
+            height: 100%;
+
+            .navlinks, .social {
+                display: flex;
+                opacity: 100%;
+
+            }
+        
+
+            .social {
+                width: 100%;
+                align-self: center;
+                justify-content: center;
+
+                padding-bottom: 32px;
+            }
+
+            .toggler {
+                
+                div:nth-child(1) {
+                    transform: rotate(45deg) translate(5px, 5px);
+                }
+                
+                div:nth-child(2) {
+                    display: none;
+                }
+            
+                div:nth-child(3) {
+                    transform: rotate(-45deg) translate(5px, -5px);
+                }
+            }
+        }
+    }
+}

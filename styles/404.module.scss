@@ -1,0 +1,33 @@
+@use './var' as *;
+
+
+.container {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    h1 {
+        font-size: 4rem;
+        color: $textcolor;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    strong {
+        color: $accentcolor;
+    }
+
+}
+
+@media(max-width: $sm) {
+    .container {
+        padding: 8px;
+    }
+}

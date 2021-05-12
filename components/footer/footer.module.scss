@@ -1,0 +1,12 @@
+@import '../../styles/var';
+
+.container {
+    width: 100%;
+    padding: 32px;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $richblack;
+}

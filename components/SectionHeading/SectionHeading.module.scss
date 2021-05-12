@@ -1,0 +1,35 @@
+@import '../../styles/var';
+
+.HeadingContainer {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+
+    small {
+        font-family: $paragraphfont;
+        color: $primary;
+
+        margin-right: 4px;
+
+        &:before {
+            content: '0';
+        }
+
+        &:after {
+            content: '.';
+        }
+    }
+
+    &::after {
+        content: '';
+
+        margin: auto 16px;
+        width: 20vw;
+        height: 1px;
+
+        background: $blue1;
+
+    }
+
+
+}

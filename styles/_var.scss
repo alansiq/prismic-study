@@ -1,0 +1,65 @@
+// Breakpoints
+$sm: 576px; 
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+$maxW: 940px;
+
+$headingfont: 'Fira Sans Extra Condensed', sans-serif;
+$paragraphfont: 'Fira Code', monospace;
+$subtitlefont: 'Fira Code', monospace;
+
+$richblack: #11121B;
+$bgblue: #1F2233;
+$blue1: #313550;
+$blue2: #2B2D44;
+$textcolor: #F8F2F0;
+$textcolor_darker: #A8A7A6;
+
+
+
+$primary: #23EFE3;
+
+$primary-l1: #31F5E9;
+$primary-l2: #4BFAEF;
+$primary-l3: #80FFF7;
+
+$primary-d1: #29E5DA;
+$primary-d2: #25CCC2;
+$primary-d3: #21A69E;
+
+$accentcolor: $primary;
+
+$bggradient: linear-gradient(180deg, #1D1E2B 0%, #11121B 100%);
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0.3;
+        transform: translate3d(0,20px,0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+@keyframes constantFlash {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

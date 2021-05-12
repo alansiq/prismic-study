@@ -1,0 +1,70 @@
+@use '../../styles/var' as *;
+
+.buttonComponent {
+    position: relative;
+    display: inline-block;
+
+    margin: 16px 0;
+
+    text-decoration: none;
+    padding: 16px;
+    border: solid $primary 2px;
+
+    font-weight: bold;
+    transition: transform 0.2s;
+
+
+    z-index: 1;
+
+    &::after {
+        content: '';
+        position: absolute;
+
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        clip-path: circle(0% at 50% 50%);
+
+        z-index: -1;
+
+        background: $primary;
+        transition: all 0.4s;
+
+    }
+
+    &:hover {
+        transform: scale(1.1); 
+        &::after {
+            transition-delay: all 0.1s;
+            clip-path: circle(150% at 50% 50%);
+
+        }
+    }
+
+    &:active {
+        
+        border-color: $primary-d1;
+
+        &::after {
+            background: $primary-d1;
+        }
+    }
+
+    &:focus {
+        outline: none;
+        border-color: $textcolor;
+
+        &::after {
+            clip-path: circle(100% at 50% 50%);
+        }
+    }
+}
+
+.buttonDisabled {
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
