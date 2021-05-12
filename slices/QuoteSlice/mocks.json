@@ -1,0 +1,20 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "QuoteSlice",
+    "primary": {
+      "quotetext": [
+        {
+          "type": "paragraph",
+          "text": "Aute veniam velit adipisicing velit nostrud sit consectetur irure occaecat non aliquip aute.",
+          "spans": []
+        }
+      ]
+    },
+    "items": [],
+    "slice_type": "quote_slice"
+  }
+]

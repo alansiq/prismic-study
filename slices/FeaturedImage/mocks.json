@@ -1,0 +1,41 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "FeaturedImage",
+    "primary": {
+      "title": [
+        {
+          "type": "heading2",
+          "text": "Deliver frictionless communities",
+          "spans": []
+        }
+      ],
+      "headline": [
+        {
+          "type": "heading3",
+          "text": "Exploit transparent applications",
+          "spans": []
+        }
+      ],
+      "link": {
+        "link_type": "Web",
+        "url": "http://google.com"
+      },
+      "linkLabel": "harness world-class models",
+      "featuredImage": {
+        "dimensions": {
+          "width": 727,
+          "height": 402
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=727&h=402&fit=crop"
+      }
+    },
+    "items": [],
+    "slice_type": "featured_image"
+  }
+]

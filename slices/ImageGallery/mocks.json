@@ -1,0 +1,67 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "ImageGallery",
+    "primary": {
+      "galleryTitle": [
+        {
+          "type": "heading2",
+          "text": "Streamline 24/365 interfaces",
+          "spans": []
+        }
+      ]
+    },
+    "items": [
+      {
+        "image": {
+          "dimensions": {
+            "width": 727,
+            "height": 402
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=727&h=402&fit=crop"
+        },
+        "imageDescription": [
+          {
+            "type": "paragraph",
+            "text": "Veniam ea do mollit tempor anim aute labore officia.",
+            "spans": []
+          }
+        ],
+        "link": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        },
+        "linkLabel": "mesh B2C e-business"
+      },
+      {
+        "image": {
+          "dimensions": {
+            "width": 727,
+            "height": 402
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=727&h=402&fit=crop"
+        },
+        "imageDescription": [
+          {
+            "type": "paragraph",
+            "text": "Incididunt ea nulla dolore ea labore ut eiusmod nulla veniam. Veniam ex ut cupidatat minim ex duis ipsum voluptate cillum sint sunt. Ex non officia minim proident exercitation officia elit eu adipisicing aute amet esse eiusmod.",
+            "spans": []
+          }
+        ],
+        "link": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        },
+        "linkLabel": "deliver next-generation schemas"
+      }
+    ],
+    "slice_type": "image_gallery"
+  }
+]
